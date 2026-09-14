@@ -1,0 +1,24 @@
+{
+  "name": "Escuela de Educación Básica Otto Arosemena Gómez",
+  "short_name": "Escuela OA",
+  "description": "Institución educativa fiscal en Quito. Educación inicial y educación general básica gratuita, desde 1967.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0369a1",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
