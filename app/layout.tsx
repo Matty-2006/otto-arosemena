@@ -3,7 +3,6 @@ import { Providers } from './providers';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
 import ScrollToTop from '@/components/ui/ScrollToTop';
-import Preloader from '@/components/ui/Preloader';
 import MobileActions from '@/components/ui/MobileActions';
 import { SCHOOL_INFO } from '@/lib/constants';
 import './globals.css';
@@ -13,21 +12,21 @@ const NAME = 'Escuela de Educación Básica Otto Arosemena Gómez';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: `${NAME} | Quito · Educación Inicial y Básica`,
+    title: {
+    default: `${NAME} | Centro docente`,
     template: `%s | ${NAME}`,
   },
   description:
-    'Institución educativa fiscal en Quito con más de 5 décadas de trayectoria. Educación inicial y educación general básica gratuita, con formación integral, valores y excelencia académica. Desde 1967 en la parroquia La Ferroviaria.',
+    'Centro docente de la Escuela Otto Arosemena Gómez: recursos, agenda, planificación y soporte para profesores.',
   keywords: [
     'escuela Otto Arosemena',
     'escuela fiscal Quito',
     'educación básica Quito',
     'La Ferroviaria escuela',
     'educación inicial Quito',
-    'matrículas escuela Quito',
-    'educación gratuita',
-    'colegio público Ecuador',
+    'portal docente Quito',
+    'recursos para profesores',
+    'planificación docente',
   ],
   applicationName: NAME,
   creator: NAME,
@@ -49,15 +48,15 @@ export const metadata: Metadata = {
     locale: 'es_EC',
     url: SITE_URL,
     siteName: NAME,
-    title: `${NAME} | Quito · Educación Inicial y Básica`,
+    title: `${NAME} | Centro docente`,
     description:
-      'Educación pública de calidad en Quito. Educación inicial y educación general básica con formación integral, desde 1967 en La Ferroviaria.',
+      'Recursos, agenda y soporte para el equipo docente de la Escuela Otto Arosemena Gómez.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${NAME} | Quito`,
+    title: `${NAME} | Centro docente`,
     description:
-      'Educación inicial y básica gratuita en Quito. Excelencia académica y formación en valores desde 1967.',
+      'Espacio interno para profesores: recursos, agenda institucional y soporte.',
   },
   manifest: '/manifest.json',
   icons: {
@@ -107,7 +106,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Saltar al contenido
         </a>
         <Providers>
-          <Preloader />
           <Header />
           <main id="contenido">{children}</main>
           <Footer />

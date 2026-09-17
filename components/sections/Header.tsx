@@ -231,8 +231,8 @@ export default function Header() {
                   <Phone size={22} />
                   Llamar · {SCHOOL_INFO.phone}
                 </a>
-                <Link href="/documentos" onClick={() => setMenuOpen(false)} className="btn-primary px-6 py-4 text-lg">
-                  Ver documentos
+                <Link href="/recursos" onClick={() => setMenuOpen(false)} className="btn-primary px-6 py-4 text-lg">
+                  Ver recursos
                 </Link>
               </div>
 

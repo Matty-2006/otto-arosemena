@@ -34,14 +34,15 @@ export const SCHEDULE = {
   sunday: 'Domingos: Cerrado',
 };
 
-// Navegación (simple, para todos los públicos)
+// Navegación del centro docente (exclusiva para profesores)
 // anchor=true: sección dentro de la página de inicio · anchor=false: subpágina
 export const NAV_ITEMS = [
   { label: 'Inicio', href: '/', anchor: false },
-  { label: 'La Escuela', href: '#acerca', anchor: true },
+  { label: 'Recursos', href: '/recursos', anchor: false },
   { label: 'Documentos', href: '/documentos', anchor: false },
+  { label: 'Agenda', href: '/agenda', anchor: false },
   { label: 'Autoridades', href: '/autoridades', anchor: false },
-  { label: 'Contacto', href: '#contacto', anchor: true },
+  { label: 'Soporte', href: '/soporte', anchor: false },
 ];
 
 // Niveles educativos (Educación General Básica ecuatoriana)

@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-slate-400">
-              Institución educativa fiscal con más de cinco décadas formando a niñas y niños de{' '}
+              Centro de recursos y comunicación para el equipo docente de{' '}
               {SCHOOL_INFO.parish}, {SCHOOL_INFO.city}.
             </p>
             <div className="mt-6 flex gap-3">
@@ -145,8 +145,8 @@ export default function Footer() {
             </ul>
             <div className="mt-6 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
               <p className="text-xs leading-relaxed text-slate-400">
-                <span className="font-semibold text-white">Institución Fiscal:</span> Educación
-                inicial y Educación General Básica · Jornadas matutina y vespertina
+                <span className="font-semibold text-white">Centro docente:</span> recursos,
+                agenda institucional y soporte para profesores
               </p>
             </div>
           </div>

@@ -7,8 +7,22 @@ export default function Preloader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1900);
-    return () => clearTimeout(timer);
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      setLoading(false);
+    };
+    const fallback = window.setTimeout(finish, 700);
+    if (document.readyState === 'complete') {
+      window.setTimeout(finish, 120);
+    } else {
+      window.addEventListener('load', finish, { once: true });
+    }
+    return () => {
+      window.clearTimeout(fallback);
+      window.removeEventListener('load', finish);
+    };
   }, []);
 
   return (
